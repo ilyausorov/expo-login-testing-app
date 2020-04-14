@@ -22,7 +22,7 @@ const loginWithFacebook = async () => {
       const user = await fetch(`https://graph.facebook.com/me?access_token=${token}`);
       Alert.alert('Logged in!', `Hi ${(await user.json()).name}!`);
     } else {
-      Alert.alert('Login failed!');
+      Alert.alert('Login failed!', `Type: ${type}`);
     }
   } catch ({ message }) {
     alert(`Facebook Login Error: ${message}`);
