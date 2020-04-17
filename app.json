@@ -23,7 +23,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "facebookScheme": "fb263384934828090",
     "facebookAppId": "263384934828090",
     "facebookDisplayName": "Expo-Login-Testing-App",
     "ios": {

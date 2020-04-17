@@ -31,7 +31,6 @@ const loginWithFacebook = async () => {
 }
 
 export default function App() {
-  console.log("appjson",appjson)
   useEffect(() => {
     const initFacebook = async () => {
       await Facebook.initializeAsync("263384934828090")
