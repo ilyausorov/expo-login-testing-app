@@ -7,15 +7,15 @@
     "scheme": "logintest",
     "platforms": [
       "ios",
-      "android",
+      "android"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#32C5FF",
+      "backgroundColor": "#32C5FF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -29,7 +29,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ilyausorov.expologintestingapp",
-      "buildNumber": "1",
+      "buildNumber": "1"
     }
   }
 }

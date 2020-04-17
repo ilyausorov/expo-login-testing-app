@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { StyleSheet, Text, View, Button, Alert } from 'react-native';
+import * as appjson from './app.json'
 
 import * as Facebook from 'expo-facebook';
 
@@ -30,17 +31,17 @@ const loginWithFacebook = async () => {
 }
 
 export default function App() {
-
+  console.log("appjson",appjson)
   useEffect(() => {
     const initFacebook = async () => {
-      await Facebook.initializeAsync("263384934828090", "Expo-Login-Testing-App")
+      await Facebook.initializeAsync("263384934828090")
     }
     initFacebook()
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Expo Login Testing App: Facebook</Text>
+      <Text>Expo Login Testing App: Facebook v.{appjson.expo.version}</Text>
       <Button onPress={loginWithFacebook} title="Press Me" />
     </View>
   );
